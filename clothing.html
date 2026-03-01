@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fashion Hub</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f5f5;
+}
+
+/* Header */
+header{
+    background:linear-gradient(90deg,#ff3f6c,#ff6f61);
+    padding:15px 8%;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    color:white;
+}
+
+header h1{
+    font-size:28px;
+    letter-spacing:1px;
+}
+
+nav a{
+    text-decoration:none;
+    color:white;
+    margin:0 15px;
+    font-weight:500;
+    transition:0.3s;
+}
+
+nav a:hover{
+    color:#ffe6eb;
+}
+
+/* Hero Section */
+.hero{
+    height:60vh;
+    background:url('https://images.unsplash.com/photo-1523381210434-271e8be1f52b') no-repeat center/cover;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-align:center;
+}
+
+.hero h2{
+    font-size:48px;
+    background:rgba(0,0,0,0.5);
+    padding:20px 40px;
+    border-radius:10px;
+}
+
+/* Products Section */
+.products{
+    padding:50px 8%;
+}
+
+.products h2{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+    color:#333;
+}
+
+.product-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    border-radius:15px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.card:hover{
+    transform:translateY(-10px);
+}
+
+.card img{
+    width:100%;
+    height:300px;
+    object-fit:cover;
+}
+
+.card-content{
+    padding:15px;
+}
+
+.card-content h3{
+    font-size:18px;
+    margin-bottom:10px;
+}
+
+.price{
+    font-size:20px;
+    color:#ff3f6c;
+    font-weight:bold;
+    margin-bottom:10px;
+}
+
+.btn{
+    display:inline-block;
+    padding:8px 15px;
+    background:#ff3f6c;
+    color:white;
+    border-radius:5px;
+    text-decoration:none;
+    transition:0.3s;
+}
+
+.btn:hover{
+    background:#e7335e;
+}
+
+/* Footer */
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Fashion Hub</h1>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Men</a>
+        <a href="#">Women</a>
+        <a href="#">Kids</a>
+        <a href="#">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h2>Discover Your Style</h2>
+</section>
+
+<section class="products">
+    <h2>Trending Collection</h2>
+    <div class="product-grid">
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246" alt="Men Shirt">
+            <div class="card-content">
+                <h3>Men Casual Shirt</h3>
+                <div class="price">₹999</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1520975922284-9b0b0e7d5b9d" alt="Women Dress">
+            <div class="card-content">
+                <h3>Women Floral Dress</h3>
+                <div class="price">₹1,499</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab" alt="Jacket">
+            <div class="card-content">
+                <h3>Winter Jacket</h3>
+                <div class="price">₹2,299</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f" alt="Tshirt">
+            <div class="card-content">
+                <h3>Stylish T-Shirt</h3>
+                <div class="price">₹799</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d" alt="Jeans">
+            <div class="card-content">
+                <h3>Blue Denim Jeans</h3>
+                <div class="price">₹1,299</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1528701800489-20be3c3a1b2c" alt="Kids Wear">
+            <div class="card-content">
+                <h3>Kids Party Wear</h3>
+                <div class="price">₹1,099</div>
+                <a href="#" class="btn">Add to Cart</a>
+            </div>
